@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Processo.com</title>
+  <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+  <script type="text/javascript" src="funcoes.js"></script>
+  <!-- Compiled and minified CSS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+  <!-- Compiled and minified JavaScript -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="style.css">
+
+</head>
+
+<body>
+  <div class="container z-depth-3 vh-100">
+    <!-- Cabeçalho -->
+    <header>
+      <!-- Cabeçalho -> Título e logo -->
+      <div class="hide-on-med-and-down row">
+        <div class="col s1">
+          <img class="img-menu valign-wrapper" src="img/post_add_blue_24dp.svg" alt="" srcset="" height="auto">
+        </div>
+        <div class="col s11">
+          <h4>Meu Processo.com</h4>
+        </div>
+      </div>
+      <!-- Cabeçalho -> Menu -->
+      <div>
+        <nav class="blue darken-1">
+          <div class="nav-wrapper">
+            <a href="#" class="sidenav-trigger left"><img class="img-menu" src="img/post_add_white_24dp.svg" alt=""
+                srcset="" height="60px"></a>
+            <a href="#" data-target="mobile-demo" class="sidenav-trigger right"><i class="material-icons">menu</i></a>
+            <a href="login.html" class="sidenav-trigger right"><i class="material-icons">person</i></a>
+            <a href="#" class="sidenav-trigger right"><i class="material-icons">search</i></a>
+            <ul class="right hide-on-med-and-down">
+              <li><a href="index.html"><i class="material-icons left">home</i>Página Inicial</a</li>
+              <li><a href="#"><i class="material-icons left">history</i>Atualizações</a></li>
+              <li><a href="#"><i class="material-icons left">cloud_download</i>Documentos</a></li>
+              <li><a href="login.html"><i class="material-icons left">person</i>Área Restrita</a></li>
+            </ul>
+          </div>
+        </nav>
+        <!-- Cabeçalho -> Mobile -->
+        <ul class="sidenav" id="mobile-demo">
+          <li><a href="index.html"><i class="material-icons left">home</i>Página Inicial</a</li>
+          <li><a href="#"><i class="material-icons left">history</i><span
+                class="badge white-text">2</span>Atualizações</a></li>
+          <li><a href="#"><i class="material-icons left">cloud_download</i>Documentos</a></li>
+        </ul>
+      </div>
+    </header>
+    <!-- Cabeçalho -> FIM -->
+    <!-- Corpo da página -->
+    <main class="row">
+        <div class="col l12 s12 valign-wrapper">
+            <div class="col l4 m3 s2"></div>
+            <div class="col l4 m6 s10 ">
+                <div class="input-field">
+                    <i class="material-icons prefix blue-text">person</i>
+                    <input placeholder="Insira seu e-mail de cadastro" type="text" id="usuariologin" class="validate">
+                    <label for="usuariologin">Usuário cadastrado</label>
+                  </div>
+                <div class="input-field">
+                    <i class="material-icons prefix blue-text">lock</i>
+                    <input placeholder="Insira sua senha" type="password" id="senhalogin" class="validate">
+                    <label for="senhalogin">Senha</label>
+                  </div>
+                <div>
+                    <button class="btn waves-effect waves-light blue" type="submit" name="action">ENTRAR
+                        <i class="material-icons right">send</i>
+                      </button>                     
+                </div>
+                <div>
+                    <br>
+                    <a href="#"><i class="material-icons left">help</i>Recuperar usário ou senha</a>
+                </div>
+            </div>
+            <div class="col l4 m3 s2"></div>
+        </div>
+    </main>
+    <!-- Rodapé -->
+    <footer>
+      <div class="blue darken-1 white-text footer-copyrigh">
+        <h6 style="display: flex; height: 50px; justify-content: center; align-items: center;margin: 0;">Copyleft ©
+          Processo.com 2022&ensp;|&ensp;<a href="politica-privacidade.html" class="white-text" target="_blank"> Política de Privacidade</a></h6>
+      </div>
+    </footer>
+  </div>
+</body>
+</html>
