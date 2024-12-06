@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Processo.com</title>
+  <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+  <script type="text/javascript" src="funcoes.js"></script>
+  <!-- Compiled and minified CSS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+  <!-- Compiled and minified JavaScript -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+
+<body>
+  <div class="container z-depth-3">
+    <!-- Cabeçalho -->
+    <header>
+      <!-- Cabeçalho -> Título e logo -->
+      <div class="hide-on-med-and-down row">
+        <div class="col s1">
+          <img class="img-menu valign-wrapper" src="img/post_add_blue_24dp.svg" alt="" srcset="" height="auto">
+        </div>
+        <div class="col s11">
+          <h4>Meu Processo.com</h4>
+        </div>
+      </div>
+      <!-- Cabeçalho -> Menu -->
+      <div>
+        <nav class="blue darken-1">
+          <div class="nav-wrapper">
+            <a href="#" class="sidenav-trigger left"><img class="img-menu" src="img/post_add_white_24dp.svg" alt=""
+                srcset="" height="60px"></a>
+            <a href="#" data-target="mobile-demo" class="sidenav-trigger right"><i class="material-icons">menu</i></a>
+            <a href="login.html" class="sidenav-trigger right"><i class="material-icons">person</i></a>
+            <a href="#" class="sidenav-trigger right"><i class="material-icons">search</i></a>
+            <ul class="right hide-on-med-and-down">
+              <li><a href="index.html"><i class="material-icons left">home</i>Página Inicial</a</li>
+              <li><a href="#"><i class="material-icons left">history</i>Atualizações</a></li>
+              <li><a href="#"><i class="material-icons left">cloud_download</i>Documentos</a></li>
+              <li><a href="login.html"><i class="material-icons left">person</i>Área Restrita</a></li>
+            </ul>
+          </div>
+        </nav>
+        <!-- Cabeçalho -> Mobile -->
+        <ul class="sidenav" id="mobile-demo">
+          <li><a href="index.html"><i class="material-icons left">home</i>Página Inicial</a</li>
+          <li><a href="#"><i class="material-icons left">history</i><span
+                class="badge white-text">2</span>Atualizações</a></li>
+          <li><a href="#"><i class="material-icons left">cloud_download</i>Documentos</a></li>
+        </ul>
+      </div>
+    </header>
+    <!-- Cabeçalho -> FIM -->
+
+    <main class="container container-mobile">
+      <h3 class="center">Formulário de Inscrição</h3>
+      <p class="red-text">Preencha todos os campos corretamente e depois você será encaminhado para <u>Àrea
+          Restrita.</u> Lá você enviará os documentos restante confome o edital divulgado, dentro do período de tempo
+        estabelecido.</p>
+      <p class="red-text"><b>Apenas preencher esse formulário <u>não</u> inscreve você no processo seletivo. É preciso o
+          cadastro <u>completo</u>.</b></p>
+      <p><b>Antes de iniciar é preciso que você leia e concorde com os <a id="link-politica" href="#modal1"
+            class="modal-trigger">Termos do Processo Seletivo (Leia aqui)</a>.</b></p>
+      <form id="form_principal" class="col s12" style="min-height: 50vh;">
+        <div id="inscricao" class="row">
+          <div id="checktermocontainer" class="col l12 s12">
+            <label>
+              <input id="checktermo" type="checkbox" class="filled-in blue-text" disabled="disabled" />
+              <span>Termos do Processo Seletivo</span>
+            </label>
+          </div>
+          <div class="input-field col l4 s10">
+            <i class="material-icons prefix blue-text">person</i>
+            <input placeholder="Insira seu nome completo" id="inscricaonome" type="text" class="validate">
+            <label for="inscricaonome">Nome completo</label>
+            <span class="helper-text" data-error="Ops! Preencha o campo corretamete"
+              data-success="Preenchido Corretamente!"></span>
+          </div>
+          <div class="input-field col l3 s10">
+            <i class="material-icons prefix blue-text center">description</i>
+            <input placeholder="Apenas números" id="inscricaocpf" type="text" class="validate" data-length="11"
+              maxlength="11">
+            <label for="inscricaocpfe">CPF</label>
+            <span id="textocpfvalidado" class="helper-text"></span>
+          </div>
+          <div class="input-field col l5 s10">
+            <i class="material-icons prefix blue-text">how_to_reg</i>
+            <select id="incricaovaga">
+              <option value="" selected disabled>Selecione a vaga que você deseja</option>
+              <option value="1">Assistente Social</option>
+              <option value="2">Auxiliar de Biblioteca</option>
+              <option value="3">Intérprete de Língua Brasileira de Sinais – LIBRAS</option>
+              <option value="4">Nutricionista</option>
+              <option value="5">Psicóloga</option>
+            </select>
+            <label>Vaga para inscrição</label>
+          </div>
+          <div class="input-field col l6 s10">
+            <i class="material-icons prefix blue-text">email</i>
+            <input placeholder="Insira um e-mail válido" type="email" id="emailinscricao" class="validate">
+            <label for="emailinscricao">E-mail de cadastro</label>
+              <span class="helper-text">Esse será o e-mail utilizado para acessar á <u>Àrea
+                Restrita.</u> e envio de informações.</span>
+              <span class="helper-text" data-error="Ops! Preencha o e-mail corretamete"
+              data-success="Preenchido Corretamente!"></span>
+          </div>
+          <div class="input-field col l6 s10">
+            <i class="material-icons prefix blue-text">phone</i>
+            <input placeholder="Apenas números" type="tel" id="celinscricao" class="validate" data-length="11"
+              maxlength="11">
+            <label for="cellinscricao">Número para contato</label>
+            <span class="helper-text" data-error="Ops! Preencha o campo corretamete"
+              data-success="Preenchido Corretamente!"></span>
+          </div>
+        </div>
+        <a id="btnSend" class="btn waves-effect waves-light blue modal-trigger" href="#modal2">CONTINUAR
+          <i class="material-icons right">send</i>
+        </a>
+      </form>
+      <div id="modal1" class="modal modal-fixed-footer">
+        <div id="conteudo-modal-termos" class="modal-content">    
+        </div>
+        <div class="modal-footer">
+          <a id="termonaoceito" href="#!" class="modal-close waves-effect waves-green btn-flat"><i
+              class="material-icons prefix blue-text left">close</i>NÃO CONCORDO</a>
+          <a id="termoceito" href="#!" class="modal-close waves-effect waves-green btn blue"><i
+              class="material-icons prefix white-text left">done_all</i>LI E CONCORDO</a>
+        </div>
+      </div>
+      <div id="modal2" class="modal modal-fixed-footer">
+        <div id="conteudo-modal-confirmacao" class="modal-content">    
+        </div>
+        <div class="modal-footer">
+          <a id="termonaoceito" href="#!" class="modal-close waves-effect waves-green btn-flat"><i
+              class="material-icons prefix blue-text left">back</i>VOLTAR</a>
+          <a id="termoceito" href="login.html" class="modal-close waves-effect waves-green btn blue"><i
+              class="material-icons prefix white-text left">send</i>CONFIRMAR INSCRIÇÃO</a>
+        </div>
+      </div>
+
+    </main>
+    <footer>
+      <div class="blue darken-1 white-text footer-copyrigh">
+        <h6 style="display: flex; height: 50px; justify-content: center; align-items: center;margin: 0;">Copyright ©
+          Processo.com 2022&ensp;|&ensp;<a href="politica-privacidade.html" class="white-text" target="_blank"> Política de Privacidade</a></h6>
+      </div>
+    </footer>
+  </div>
+</body>
+<script>
+</script>
+
+</html>
