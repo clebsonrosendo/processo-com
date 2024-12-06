@@ -1,0 +1,70 @@
+body {
+    background-color: #FDFEFF;
+}
+.img-menu {
+    color: #1E88E5;
+    width: 100%;
+}
+
+
+.badge-new {
+    color: #FFF;
+}
+
+.secao_inicial {
+    height: 60vh;
+    width: 100%;
+    background-image: url(img/background_secao_1.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.secao_inicial_interna {
+    padding: 2rem;
+    background-color: rgba(0, 0, 0, 0.7);
+    height: 100%;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.secao_inicial_interna a {
+    color: #fff;
+}
+
+.secao_inicial_interna h5 {
+    border-left: solid 5px #1E88E5;
+    padding: 5px;
+}
+
+#checktermocontainer {
+    pointer-events: none;
+}
+
+.dropdown-content li>a, .dropdown-content li>span {
+    font-size: 16px;
+    color: #000;
+}
+#form_principal input:focus {
+    border-bottom: 1px solid #1E88E5;
+    box-shadow: 0 1px 0 0 #1E88E5;
+  }
+ #form_principal input:focus + label {
+    color: #1E88E5;
+  }
+
+.container {
+    width: auto;
+}
+
+@media only screen and (min-width: 800px)
+{.container {width: 85%;}
+
+@media only screen and (max-width: 799px)
+{
+    .container {box-shadow: none; height: 100vh;}
+    .img-menu {height: 80%;}
+    .container-mobile{padding: 0 15px;} 
+    
+}
