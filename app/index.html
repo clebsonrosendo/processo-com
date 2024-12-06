@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Processo.com</title>
+  <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+  <script type="text/javascript" src="funcoes.js"></script>
+  <!-- Compiled and minified CSS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+  <!-- Compiled and minified JavaScript -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="style.css">
+
+</head>
+
+<body>
+  <div class="container z-depth-3">
+    <!-- Cabeçalho -->
+    <header>
+      <!-- Cabeçalho -> Título e logo -->
+      <div class="hide-on-med-and-down row">
+        <div class="col s1">
+          <img class="img-menu valign-wrapper" src="img/post_add_blue_24dp.svg" alt="" srcset="" height="auto">
+        </div>
+        <div class="col s11">
+          <h4>Meu Processo.com</h4>
+        </div>
+      </div>
+      <!-- Cabeçalho -> Menu -->
+      <div>
+        <nav class="blue darken-1">
+          <div class="nav-wrapper">
+            <a href="#" class="sidenav-trigger left"><img class="img-menu" src="img/post_add_white_24dp.svg" alt=""
+                srcset="" height="60px"></a>
+            <a href="#" data-target="mobile-demo" class="sidenav-trigger right"><i class="material-icons">menu</i></a>
+            <a href="login.html" class="sidenav-trigger right"><i class="material-icons">person</i></a>
+            <a href="#" class="sidenav-trigger right"><i class="material-icons">search</i></a>
+            <ul class="right hide-on-med-and-down">
+              <li><a href="index.html"><i class="material-icons left">home</i>Página Inicial</a</li>
+              <li><a href="#"><i class="material-icons left">history</i>Atualizações</a></li>
+              <li><a href="#"><i class="material-icons left">cloud_download</i>Documentos</a></li>
+              <li><a href="login.html"><i class="material-icons left">person</i>Área Restrita</a></li>
+            </ul>
+          </div>
+        </nav>
+        <!-- Cabeçalho -> Mobile -->
+        <ul class="sidenav" id="mobile-demo">
+          <li><a href="index.html"><i class="material-icons left">home</i>Página Inicial</a</li>
+          <li><a href="#"><i class="material-icons left">history</i><span
+                class="badge white-text">2</span>Atualizações</a></li>
+          <li><a href="#"><i class="material-icons left">cloud_download</i>Documentos</a></li>
+        </ul>
+      </div>
+    </header>
+    <!-- Cabeçalho -> FIM -->
+
+    <!-- Banner Inicial -->
+    <div class="">
+      <div class="col l12 s12 secao_inicial">
+        <div class="col l12 s12 secao_inicial_interna">
+          <h4 class="responsive">Novidades!</h4>
+          <h5><a href="#">Aberto o edital para o processo seletivo na secretaria de educação.</a></h5>
+          <div><a href="inscricao.html" class="btn waves-effect waves-light blue darken-1"
+              title="Ir para inscrição no processo seletivo"><i class="material-icons left">send</i>INSCREVER-SE</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Corpo da página -->
+    <main class="row">
+      <!-- Menu de navegação -->
+      <aside>
+        <div class="col l3 s12 collection with-header"
+          style="border-top: none; border-bottom: none; border-left: none;max-height: 500px;">
+          <h5 class="collection-header center-align">Links de navegação</h5>
+          <a href="#" class="collection-item black-text"><i class="material-icons left">push_pin</i>Vagas
+            disponíveis</a>
+          <a href="#!" class="collection-item black-text"><i class="material-icons left">push_pin</i>Documentação</a>
+          <a href="#!" class="collection-item black-text"><i class="material-icons left">push_pin</i>Avaliação</a>
+          <a href="#!" class="collection-item black-text"><i class="material-icons left">push_pin</i>Contratação</a>
+          <br>
+          <div class="container grey lighten-5 valign-wrapper" style="padding: 10px 0;">
+            <img class="respoonsive-img" src="img/file.png" alt="Visualizar Edital" srcset="" width="70px"
+              height="auto">
+            <a href="files/edital.pdf" class="btn waves-effect waves-light blue darken-1" target="_blank"
+              style="font-weight: 600;">Edital<i class="material-icons left">cloud_download</i></a>
+          </div>
+        </div>
+      </aside>
+      <!-- Seções de conteúdo -->
+      <section>
+        <div class="col l7 s12" style="min-height: 500px;">
+          <section>
+            <div>
+              <h4>Vagas e Requisitos</h4>
+              <hr>
+              <p>&ensp;&ensp;Os cargos, as vagas, a descrição do cargo, salários às quais os serviços estarão vinculados são os estabelecidos na <b>TABELA ABAIXO</b>.</p>
+              <blockquote class="spinner-blue">O horário de trabalho será definido no momento da contratação, visando atender as necessidades do serviço, podendo variar para os períodos diurno, noturno, misto, na forma de revezamento ou escala de serviço.</blockquote>
+              <li><b>Das funções, vagas, requisitos, carga horária e remunerações:</b></li>
+              <table class="striped">
+                <thead>
+                  <tr>
+                      <th>Função</th>
+                      <th>Requisitos</th>
+                      <th>Vagas</th>
+                      <th>Carga Horária</th>
+                      <th>Renumeração</th>
+                  </tr>
+                </thead>
+        
+                <tbody>
+                  <tr>
+                    <td>Assistente Social</td>
+                    <td>Nível Superior, com experiência área escolar</td>
+                    <td>02</td>
+                    <td>30h</td>
+                    <td>R$ 2.500,00</td>
+                  </tr>
+                  <tr>
+                    <td>Auxiliar de Biblioteca</td>
+                    <td>Ensino Médio Completo (Magistério ou Curso Normal)</td>
+                    <td>01</td>
+                    <td>20h</td>
+                    <td>R$ 1.212,00</td>
+                  </tr>
+                  <tr>
+                    <td>Auxiliar de Informática</td>
+                    <td>Curso Técnico em Informática</td>
+                    <td>01</td>
+                    <td>20h</td>
+                    <td>R$ 1.212,00</td>
+                  </tr>
+                  <tr>
+                    <td>Intérprete de Língua Brasileira de Sinais – LIBRAS</td>
+                    <td>Ensino Médio Completo e Certificado de Proficiência (PROLIBRAS) ou Formação Profissional de Tradutor e Intérprete de LIBRAS, nos termos do Art. 4º da Lei Federal nº 12.319/2010 ou Curso de Língua Brasileira de Sinais.</td>
+                    <td>07</td>
+                    <td>20h</td>
+                    <td>R$ 1.212,00</td>
+                  </tr>
+                  <tr>
+                    <td>Nutricionista</td>
+                    <td>Nível Superior</td>
+                    <td>01</td>
+                    <td>40h</td>
+                    <td>R$ 2.376,00</td>
+                  </tr>
+                  <tr>
+                    <td>Psicóloga</td>
+                    <td>Nível Superior, com experiência área escolar</td>
+                    <td>01</td>
+                    <td>40h</td>
+                    <td>R$ 3.200,00</td>
+                  </tr>
+                </tbody>
+              </table>
+              <div class="red lighten-5">
+                <h5 class="center"><b>Inscrições</b></h5>
+                <div class="container">
+                <p>Todas as incrições serão realizadas <i>exclusivamente</i> por meio desse site no período de <b id="dataI"></b> até <b id="dataF"></b>.</p>
+                <ol>
+                  <li>Ao candidato fica atribuída total responsabilidade pelas informações fornecidas no preenchimento da ficha de inscrição, assumindo, portanto, as consequências por eventuais erros e informação inverídica sob pena de ser excluído no processo seletivo.</li>
+                  <li>Ao candidato será permitida a inscrição em apenas <b>uma</b> função.</li>
+                  <li>Antes de efetuar a inscrição, o candidato deverá tomar conhecimento do disposto neste <a href="files/edital.pdf" target="_blank">Edital</a>, em seus Anexos e certificar-se de que preenche todos os requisitos exigidos.</li>
+                </ol>
+              </div>
+              </div>
+              <li><b>Candidatos portadores de deficiência:</b></li>
+              <p>Aos candidatos com deficiência serão reservados 5% (cinco por cento) das vagas, de acordo com a legislação em vigor. Na falta de aprovados para as vagas reservadas a deficientes, estas serão preenchidas pelos demais aprovados, observando-se a ordem de classificação. Também, deverão indicar na ficha de inscrição o tipo de sua deficiência, com expressa referência ao código correspondente da Classificação Internacional de Doenças (CID), juntando documentação comprobatória. E não poderá alegar desconhecimento das normas e condições mencionadas neste Edital, para as quais a inscrição implicará em conhecimento e tácita aceitação.</p>
+            </div>
+          </section>
+          <section>
+            <div>
+              <h4>Documentação</h4>
+              <hr>
+            </div>
+          </section>
+          <section>
+            <div>
+              <h4>Avaliação</h4>
+              <hr>
+            </div>
+          </section>
+          <section>
+            <div>
+              <h4>Contratação</h4>
+              <hr>
+            </div>
+          </section>
+        </div>
+      </section>
+    </main>
+    <!-- Rodapé -->
+    <footer>
+      <div class="blue darken-1 white-text footer-copyrigh">
+        <h6 style="display: flex; height: 50px; justify-content: center; align-items: center;margin: 0;">Copyleft ©
+          Processo.com 2022&ensp;|&ensp;<a href="politica-privacidade.html" class="white-text" target="_blank"> Política de Privacidade</a></h6>
+      </div>
+    </footer>
+  </div>
+</body>
+</html>
